@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM ubuntu:focal
 LABEL maintainer="ldocky"
 RUN apk add curl vlc ffmpeg
 ADD https://github.com/xteve-project/xTeVe-Downloads/raw/master/xteve_linux_amd64.zip /tmp/xteve_linux_amd64.zip
