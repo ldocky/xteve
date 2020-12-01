@@ -2,7 +2,7 @@ FROM ubuntu:focal
 LABEL maintainer="ldocky"
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
-RUN apt-get install -y curl ffmpeg
+RUN apt-get install -y curl ffmpeg unzip
 RUN apt-get install -y --no-install-recommends vlc
 ADD https://github.com/xteve-project/xTeVe-Downloads/raw/master/xteve_linux_amd64.zip /tmp/xteve_linux_amd64.zip
 
