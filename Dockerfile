@@ -17,6 +17,7 @@ RUN groupadd xteve && useradd xteve -g xteve
 
 USER xteve
 
+RUN mkdir /home/xteve/
 RUN mkdir /home/xteve/.xteve/
 RUN mkdir /home/xteve/.xteve/backup/
 RUN mkdir /tmp/xteve
