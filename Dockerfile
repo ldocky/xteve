@@ -12,7 +12,7 @@ RUN rm /tmp/xteve_linux_amd64.zip
 
 RUN chmod +x /xteve/xteve
 
-RUN addgroup -S xteve && adduser -S xteve -G xteve
+RUN groupadd -S xteve && useradd -S xteve -G xteve
 
 USER xteve
 
