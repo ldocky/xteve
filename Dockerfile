@@ -15,18 +15,16 @@ RUN chmod +x /xteve/xteve
 
 RUN groupadd xteve && useradd xteve -g xteve
 
-
-
 RUN mkdir /home/xteve/
 RUN mkdir /home/xteve/.xteve/
 RUN mkdir /home/xteve/.xteve/backup/
 RUN mkdir /tmp/xteve
 
-USER xteve
-
 RUN chown xteve:xteve /home/xteve/.xteve/
 RUN chown xteve:xteve /home/xteve/.xteve/backup/
 RUN chown xteve:xteve /tmp/xteve
+
+USER xteve
 
 VOLUME /home/xteve/.xteve
 
